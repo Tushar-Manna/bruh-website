@@ -1,1 +1,1 @@
-# mc-server-status-page
+# The bruh's website coming soon
