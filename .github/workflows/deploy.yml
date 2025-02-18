@@ -1,0 +1,28 @@
+name: Deploy Next.js app to Ubuntu server
+
+on:
+  push:
+    branches:
+      - main # or the branch you want to deploy from
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to Ubuntu server
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
+            cd ~/bruh-website || exit
+            git pull origin main || exit
+            npm install || exit
+            npm run build || exit
+            pm2 restart nextjs-app || exit
+          EOF
