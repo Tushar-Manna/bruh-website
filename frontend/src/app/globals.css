@@ -2,7 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background-color: black;
-  color: white;
+:root {
+  --color-primary: #22BABB;
+  --color-primary-dark: #002828;
+  --color-secondary: #9EF8EE;
+  --color-secondary-dark: #348888;
+  --drop-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --color-tertiary: #FA7F08;
+  --color-tertiary-dark: #F24405;
+}
+
+@font-face {
+  font-family: 'OCR A Std';
+  src: url('/font/ocr-a-std.ttf') format('truetype');
+}
+
+* {
+  font-family: 'OCR A Std', sans-serif;
 }

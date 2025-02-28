@@ -3,7 +3,7 @@ name: Deploy Next.js app to Ubuntu server
 on:
   push:
     branches:
-      - main # or the branch you want to deploy from
+      - main
 
 jobs:
   deploy:
