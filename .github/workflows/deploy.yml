@@ -20,9 +20,11 @@ jobs:
       - name: Deploy to Ubuntu server
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
-            cd ~/bruh-website/frontend || exit
-            git pull origin main || exit
-            npm install || exit
-            npm run build || exit
-            pm2 restart bruh-website || exit
+          set -e #Exit if any error occurs
+            echo "Deploying ..."
+            cd ~/bruh-website || exit
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart bruh-website
           EOF
