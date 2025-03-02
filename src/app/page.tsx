@@ -1,4 +1,4 @@
-
+import Button from "@/components/Button"
 
 export default function Home() {
   return (
@@ -8,8 +8,8 @@ export default function Home() {
                       <div className="text-white/50 italic">"Bitches come and Go... Bruh</div>
                       <div className="text-white/50 italic">But you know we stay"   -The Bruhs</div>
                       <div className="w-full m-2 flex justify-center space-x-4">
-                          <button>Hello</button>
-                          <button>Bruh</button>
+                          <Button>Hello</Button>
+                          <Button>Bruh</Button>
                       </div>
                   </div>
     </div>
