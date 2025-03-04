@@ -5,7 +5,6 @@ export default function Home() {
                   <div className="text-center">
                       <div className="text-6xl text-white"><h1>Welcome to Bruhs.in</h1></div>
                       <div className="text-white/50 italic">Coming Soon.......</div>
-                      <div className="text-white/50 italic">bruhs.in == bruhh.ddns.net</div>
                       {/* <div className="text-white/50 italic">But you know we stay"   -The Bruhs</div> */}
                       <div className="w-full m-2 flex justify-center space-x-4">
                           {/* <Button>Hello</Button>
