@@ -18,16 +18,16 @@
   --color-tertiary-dark: #F24405;
 }
 
-
 body {
   background-color: #ffffff;
 }
 
 @font-face {
-  font-family: 'OCR A Std';
-  src: url('/font/ocr-a-std.ttf') format('truetype');
+  font-family: 'Geist Regular';
+  src: url('/font/Geist-Regular.ttf') format('truetype');
 }
 
+
 * {
-  font-family: 'OCR A Std', sans-serif;
+  font-family: 'Geist Regular', sans-serif; 
 }

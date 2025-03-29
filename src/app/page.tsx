@@ -1,27 +1,36 @@
 import Button from "@/components/Button";
+import Profile from "@/components/profile1";
 import Lottie from "react-lottie-player";
 // import animationData from "/Animation - 1743219469295.lottie";
 
 export default function Home() {
   return (
     <div>
-      <div className="flex items-center h-screen p-20 place-content-between">
-        <div>
-          <div className="mb-8">
-            <h1 className="decoration-black text-8xl">Bruhs</h1>
-            <h2>The Group that is doing but actually not doing anything.</h2>
+      <div className="h-screen">
+        <div className="flex items-center p-20 place-content-between">
+          <div>
+            <div className="mb-8">
+              <h1 className="decoration-black text-8xl">Bruhs</h1>
+              <h2>The Group that is doing but actually not doing anything.</h2>
+            </div>
+            <div className="flex space-x-4">
+              <Button >Contact Us</Button>
+              <Button >Read Articles</Button>
+            </div>
           </div>
-          <div className="flex space-x-4">
-            <Button >Contact Us</Button>
-            <Button >Read Articles</Button>
+          <div>
+            <div className="flex items-center justify-center">
+              <img src="/av.png" className="drop-shadow-2xl h-auto" alt="" />
+            </div>
           </div>
         </div>
-        <div className="flex items-center justify-center">
-          <img src="/av.png" className="drop-shadow-2xl h-auto" alt="" />
+        <div className="flex items-center place-content-between">
+          <div>Scroll</div>
+          <div>Scroll</div>
         </div>
       </div>
-      <div className="flex items-center p-8 place-content-between">
-        <div>Scroll</div>
+      <div className="flex items-center justify-center">
+        
         <div>
           {/* <Lottie
             loop
@@ -38,8 +47,10 @@ export default function Home() {
         <div className="flex items-center justify-center text-xl">
           <h1>We are Lazy (fr)</h1>
         </div>
-        <div className="flex items-center justify-center">
-          
+        <div className="flex items-center justify-center space-x-32">
+          <Profile></Profile>
+          <Profile></Profile>
+          <Profile></Profile>
         </div>
       </div>
       <div className="bg-primary p-4">
