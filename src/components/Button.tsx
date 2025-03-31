@@ -9,7 +9,7 @@ interface ButtonProps {
 export default function Button({ children, onClick, className = "" }: ButtonProps) {
   return (
     <button 
-      className={`h-[40px] px-4 bg-white hover:bg-[#22BABB] text-black transition-colors duration-200 rounded-full flex items-center justify-center ${className}`}
+      className={`h-[40px] px-4 bg-primary hover:bg-primaryDark hover:drop-shadow-xl text-white transition-colors duration-200 rounded-full flex items-center justify-center ${className}`}
       onClick={onClick}
     >
       {children}
